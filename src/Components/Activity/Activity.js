@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Activity = (props) => {
-    const { picture, name, text, age, time}=props.activity
-    console.log(props.activity);
+    const { picture, name, text, age, time}=props.activity;
+    
     return (
         <div className="col">
             <div className="card h-100">
@@ -13,7 +13,7 @@ const Activity = (props) => {
                     <b>Age: {age}</b><br/>
                     <b>Activity time: {time}</b>
                 </div>
-                <button className='btn btn-primary w-100'>Add to List</button>
+                <button onClick={()=>props.addToList(time)} className='btn btn-primary w-100'>Add to List</button>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const User = () => {
                 </div>
                 <div className="col-md-8 ">
                     <h3>Md Imran</h3>
-                    <p className='text-muted'><i class="fa-solid fa-location-dot"></i> Narayanganj, Dhaka</p>
+                    <p className='text-muted'><i className="fa-solid fa-location-dot"></i> Narayanganj, Dhaka</p>
                 </div>
             </div>
             <div className="row">
