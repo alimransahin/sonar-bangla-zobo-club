@@ -1,7 +1,9 @@
 import React from 'react';
 
+
 const Activity = (props) => {
     const { picture, name, text, age, time}=props.activity;
+    const [disable, setDisable] = React.useState(false);
     
     return (
         <div className="col">
@@ -13,7 +15,7 @@ const Activity = (props) => {
                     <b>Age: {age}</b><br/>
                     <b>Activity time: {time}</b>
                 </div>
-                <button onClick={()=>props.addToList(time)} className='btn btn-primary w-100'>Add to List</button>
+                <button onClick={() => {props.addToList(time); setDisable(true)}} className='btn btn-primary w-100' disabled={disable} >Add to List</button>
             </div>
         </div>
     );
