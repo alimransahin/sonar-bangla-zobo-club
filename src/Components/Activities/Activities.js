@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
-import Break from '../Break/Break';
+import Calculation from '../Calculation/Calculation';
 import Header from '../Header/Header';
 import User from '../User/User';
 
@@ -8,6 +8,7 @@ import User from '../User/User';
 const Activities = () => {
     const [activities, setActivities] = useState([]);
     const[totalTime, setTotalTime]=useState(0);
+    const[totalBreakTime, setTotalBreakTime]=useState(0);
 
     useEffect(() => {
         fetch('data.json')
@@ -17,6 +18,13 @@ const Activities = () => {
     const addToList = (time) => {
         setTotalTime(totalTime+ time);
     }
+    const breakTime=[15,30,45,60];
+
+    const updateBreakTime=(time)=>{
+        setTotalBreakTime(time);
+        localStorage.setItem('storageTime', time)
+    }
+
     return (
         <div className='row'>
             <div className="col-md-9 col-sm-12 bg-light">
@@ -36,19 +44,15 @@ const Activities = () => {
             <div className="col-md-3 col-sm-12">
                 <div className="my-2">
                     <User></User>
-                    <Break></Break>
                     <div className='mx-2 my-5'>
-                        <h2 className=''>Activity Details</h2>
-                        <div className="d-flex justify-content-between my-2 p-3 bg-secondary rounded-4 text-light">
-                            <h4>Activity Time</h4>
-                            <h5>{totalTime} Minutes</h5>
+                        <h2 className='text-muted'>Break</h2>
+                        <div className="bg-secondary d-flex justify-content-around p-2 rounded-2">
+                            {
+                                breakTime.map(time => <button onClick={() => { updateBreakTime(time) }} type='button' className="btn btn-light btn  p-3 fs-4" >{time}</button>)
+                            }
                         </div>
-                        <div className="d-flex justify-content-between my-2 p-3 bg-secondary rounded-4 text-light">
-                            <h4>Break</h4>
-                            <h5>0 Minutes</h5>
-                        </div>
-                        <button className='btn btn-primary my-2 p-3 rounded-4 w-100 fs-3' >Activity Completed</button>
                     </div>
+                    <Calculation totalTime={totalTime}></Calculation>
                 </div>
             </div>
         </div>
