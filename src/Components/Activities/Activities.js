@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Calculation from '../Calculation/Calculation';
+import FaQ from '../FaQ/FaQ';
 import Header from '../Header/Header';
 import User from '../User/User';
 
@@ -39,6 +40,7 @@ const Activities = () => {
                             ></Activity>)
                         }
                     </div>
+                    <FaQ></FaQ>
                 </div>
             </div>
             <div className="col-md-3 col-sm-12">

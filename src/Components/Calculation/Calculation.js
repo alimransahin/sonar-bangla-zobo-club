@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Calculation = (props) => {
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("Wow Activities Completed!");
     let breakTime = localStorage.getItem('storageTime');
     if(!breakTime){
         breakTime=0;
