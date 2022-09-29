@@ -4,13 +4,15 @@
         "picture": "https://guts.wisc.edu/wp-content/uploads/sites/975/2021/04/MCMED_5-Reasons-REading-is-So-Important-to-Student-Success.jpg",
         "age": "16-30",
         "time": 17,
-        "name": "Reading"
+        "name": "Reading",
+        "text": "Reading gets your mind working across different areas. For starters, it involves comprehension to process the words you read. Beyond that, you can use your analytical abilities, stimulate memories, and even broaden your imagination by reading words off a page."
     },
     {
         "id": "02",
         "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6RRk-jBW-NtK8jPeTWcYARivYK97zzlVwylGdHjyMomY9C8wlV07CcgQM4YTFP7Kd7g&usqp=CAU",
         "age": "16-38",
         "time": 37,
+        "text":"Walking is a type of cardiovascular physical activity, which increases your heart rate. This improves blood flow and can lower blood pressure. It helps to boost energy levels by releasing certain hormones like endorphins and delivering oxygen throughout the body.",
         "name": "Walking"
     },
     {
@@ -18,6 +20,7 @@
         "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoBkL1yMxYN3t1KCZsvhArmjnC0Q40jrpJA&usqp=CAU",
         "age": "16-40",
         "time": 35,
+        "text":"Frequent, daily play can help reduce anxiety, stress and irritability. It also helps boost joy and self-esteem. Adults observing children at play can help them better understand emotions by naming them.",
         "name": "Playing"
     },
     {
@@ -25,6 +28,7 @@
         "picture": "https://previews.123rf.com/images/rawpixel/rawpixel1603/rawpixel160317115/53957052-people-meeting-social-communication-connection-teamwork-concept.jpg",
         "age": "16-42",
         "time": 22,
+        "text":"Meetings provide a valuable forum for a range of different functions, helping people to share ideas, make decisions, build team relationships, and even feel less lonely at work.",
         "name": "Meeting"
     },
     {
@@ -32,6 +36,7 @@
         "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKhCU-2FFcxc8SyK7VgWaE_uWqlM4n-p0d-paAsFqH9RptuBWSNoCyl7ruvtaIXt5jdg&usqp=CAU",
         "age": "16-30",
         "time": 60,
+        "text":"Trees give off oxygen that we need to breathe. Trees reduce the amount of storm water runoff, which reduces erosion and pollution in our waterways and may reduce the effects of flooding. Many species of wildlife depend on trees for habitat. Trees provide food, protection, and homes for many birds and mammals.",
         "name": "Gardening"
     },
     {
@@ -39,6 +44,7 @@
         "picture": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201610/generous-indians-story_647_102516115519.jpg",
         "age": "16-28",
         "time": 52,
+        "text":"Scientific studies show that helping others can contribute to our happiness in different ways. These include increasing our sense of meaning and satisfaction with life and boosting our self-confidence. It can reduce stress and help us feel calmer too.",
         "name": "Helping"
     }
 ]
