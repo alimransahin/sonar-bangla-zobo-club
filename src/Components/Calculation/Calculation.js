@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Calculation = (props) => {
-    const activityToast = () => toast("Wow so easy!");
+    const notify = () => toast("Wow so easy!");
     let breakTime = localStorage.getItem('storageTime');
     if(!breakTime){
         breakTime=0;
@@ -20,7 +20,8 @@ const Calculation = (props) => {
                     <h4>Break</h4>
                     <h5>{breakTime} Minutes</h5>
                 </div>
-                <button onClick={activityToast} className='btn btn-primary my-2 p-3 rounded-4 w-100 fs-3' >Activity Completed</button>
+                <button onClick={notify} className='btn btn-primary my-2 p-3 rounded-4 w-100 fs-3' >Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );
